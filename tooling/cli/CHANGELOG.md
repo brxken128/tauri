@@ -1,5 +1,16 @@
 # Changelog
 
+## \[2.0.0-alpha.22]
+
+### New Features
+
+- [`1878766f`](https://www.github.com/tauri-apps/tauri/commit/1878766f7f81a03b0f0b87ec33ee113d7aa7a902)([#8667](https://www.github.com/tauri-apps/tauri/pull/8667)) Migrate the allowlist config to the new capability file format.
+
+### Dependencies
+
+- Upgraded to `tauri-utils@2.0.0-alpha.14`
+- Upgraded to `tauri-bundler@2.0.0-alpha.15`
+
 ## \[2.0.0-alpha.21]
 
 ### New Features

@@ -1,5 +1,35 @@
 # Changelog
 
+## \[2.0.0-alpha.22]
+
+### New Features
+
+- [`74a2a603`](https://www.github.com/tauri-apps/tauri/commit/74a2a6036a5e57462f161d728cbd8a6f121028ca)([#8661](https://www.github.com/tauri-apps/tauri/pull/8661)) Implement access control list for IPC usage.
+- [`c77b4032`](https://www.github.com/tauri-apps/tauri/commit/c77b40324ea9bf580871fc11aed69ba0c9b6b8cf)([#8280](https://www.github.com/tauri-apps/tauri/pull/8280)) Add multiwebview support behind the `unstable` feature flag. See `WindowBuilder` and `WebviewBuilder` for more information.
+
+### Bug Fixes
+
+- [`7f033f6d`](https://www.github.com/tauri-apps/tauri/commit/7f033f6dcd54c69a4193765a5c1584755ba92c61)([#8537](https://www.github.com/tauri-apps/tauri/pull/8537)) Fix undecorated window resizing on Windows and Linux.
+
+### What's Changed
+
+- [`9f8037c2`](https://www.github.com/tauri-apps/tauri/commit/9f8037c2882abac19582025001675370f0d7b669)([#8633](https://www.github.com/tauri-apps/tauri/pull/8633)) On Windows, fix decorated window not transparent initially until resized.
+- [`7f033f6d`](https://www.github.com/tauri-apps/tauri/commit/7f033f6dcd54c69a4193765a5c1584755ba92c61)([#8537](https://www.github.com/tauri-apps/tauri/pull/8537)) Add `Window::start_resize_dragging` and `ResizeDirection` enum.
+
+### Dependencies
+
+- Upgraded to `tauri-build@2.0.0-alpha.15`
+- Upgraded to `tauri-utils@2.0.0-alpha.14`
+- Upgraded to `tauri-macros@2.0.0-alpha.14`
+- Upgraded to `tauri-runtime@1.0.0-alpha.9`
+- Upgraded to `tauri-runtime-wry@1.0.0-alpha.10`
+
+### Breaking Changes
+
+- [`c77b4032`](https://www.github.com/tauri-apps/tauri/commit/c77b40324ea9bf580871fc11aed69ba0c9b6b8cf)([#8280](https://www.github.com/tauri-apps/tauri/pull/8280)) The `invoke_system`, `on_page_load` hooks now gives you a `Webview` argument instead of a `Window`.
+- [`c77b4032`](https://www.github.com/tauri-apps/tauri/commit/c77b40324ea9bf580871fc11aed69ba0c9b6b8cf)([#8280](https://www.github.com/tauri-apps/tauri/pull/8280)) Renamed `Window` to `WebviewWindow`, `WindowBuilder` to `WebviewWindowBuilder`, `Manager::windows` to `Manager::webview_windows` and `Manager::get_window` to `Manager::get_webview_window`.
+- [`c77b4032`](https://www.github.com/tauri-apps/tauri/commit/c77b40324ea9bf580871fc11aed69ba0c9b6b8cf)([#8280](https://www.github.com/tauri-apps/tauri/pull/8280)) Renamed the `window-data-url` feature flag to `webview-data-url`.
+
 ## \[2.0.0-alpha.21]
 
 ### New Features
